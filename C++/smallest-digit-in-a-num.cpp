@@ -3,15 +3,18 @@ using namespace std;
 int main()
 {
 
-  int num,rev=0,;
+  int num,min=9;
   cout<<"Enter a number:";
   cin>>num;
 
   while(num>0){
-    digit=num%10;
-    rev=rev*10+digit;
+    int digit=num%10;
+    if(digit<min){
+      min=digit;
+    }
     num=num/10;
   }
+  cout<<min;
 
 return 0;
 }
