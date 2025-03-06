@@ -83,7 +83,7 @@ p{
 }
 
 header{
-  background: radial-gradient(#fff,hwb(177 9% 15% / 0.525));
+  background: radial-gradient(#fff,#ffd6d6)
   font-family: 'Poppins';
 }
 
