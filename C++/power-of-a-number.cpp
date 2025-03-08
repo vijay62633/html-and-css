@@ -4,7 +4,7 @@ int main()
 {
 
   int num,power,ans=1;
-  cout<<"Enter a number:";
+  cout<<"Enter base:";
   cin>>num;
   cout<<"Enter power:";
   cin>>power;
