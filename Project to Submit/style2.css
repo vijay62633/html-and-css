@@ -95,12 +95,12 @@ p{
   color: white;
 }
 
-header{
+#home{
   background: radial-gradient(#fff, #03f0fc);
   font-family: 'Poppins';
 }
 
-header .row{
+#home .row{
   margin-top: 30px;
 }
 
@@ -315,6 +315,44 @@ footer hr{
 .copyright{
   text-align: center;
 }
+
+/* ------------ all productd page ------------ */
+
+.row-2{
+  justify-content: space-around;
+  margin: 100px auto 50px;
+}
+
+select{
+  border: 1px solid #03f0fc;
+  padding: 5px;
+}
+
+select:focus{
+  outline: none;
+}
+
+.page-btn{
+  margin: 0px auto 80px;
+}
+
+.page-btn span{
+  display: inline-block;
+  border: 1px solid #03f0fc;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.page-btn span:hover{
+  background: #03f0fc;
+  color: white;
+}
+
 /* -------------------------------------------------------------------------- */
 
 .accout-page{
@@ -392,5 +430,6 @@ form a{
 }
 #RegForm{
   left: 0;
+}
 
 
