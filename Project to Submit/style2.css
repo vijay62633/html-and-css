@@ -9,7 +9,7 @@ body{
 }
 
 /* .logo{
-  background-color: #03f0fc;
+  background-color: #03dbfc;
   width: 200px;
   display: flex;
   align-items: center;
@@ -90,13 +90,23 @@ p{
   transition: background 0.5s;
 }
 
+.btn2{
+  background: #03dbfc;
+  color: #555;
+}
+
 .btn:hover{
   background: #555;
   color: white;
 }
 
+.btn2:hover{
+  background: #ff523b;
+}
+
+
 #home{
-  background: radial-gradient(#fff, #03f0fc);
+  background: radial-gradient(#fff, #03dbfc);
   font-family: 'Poppins';
 }
 
@@ -151,7 +161,7 @@ p{
 
 .title::after{
   content: '';
-  background: #03f0fc;
+  background: #03dbfc;
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -171,7 +181,7 @@ h4{
 }
 
 .rating .fa-star,.fa-solid{
-  color: #03f0fc;
+  color: #03dbfc;
 }
 
 .col-4:hover{
@@ -179,7 +189,7 @@ h4{
 }
 /* --------- offer --------- */
 .offer{
-  background: radial-gradient(#fff,#03f0fc);
+  background: radial-gradient(#fff,#03dbfc);
   margin-top: 80px;
   padding: 30px 0;
 }
@@ -218,7 +228,7 @@ small{
 
 .fa-quote-left{
   font-size: 34px;
-  color: #03f0fc;
+  color: #03dbfc;
 }
 
 .col-3 p{
@@ -324,7 +334,7 @@ footer hr{
 }
 
 select{
-  border: 1px solid #03f0fc;
+  border: 1px solid #03dbfc;
   padding: 5px;
 }
 
@@ -338,7 +348,7 @@ select:focus{
 
 .page-btn span{
   display: inline-block;
-  border: 1px solid #03f0fc;
+  border: 1px solid #03dbfc;
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -349,7 +359,7 @@ select:focus{
 }
 
 .page-btn span:hover{
-  background: #03f0fc;
+  background: #03dbfc;
   color: white;
 }
 
@@ -357,7 +367,7 @@ select:focus{
 
 .accout-page{
   padding: 50px 0;
-  background: radial-gradient(#fff,#03f0fc);
+  background: radial-gradient(#fff,#03dbfc);
 }
 
 .form-container{
