@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 
 .navbar{
@@ -315,42 +315,11 @@ footer hr{
 }
 
 .menu-icon{
-  width: 28px;
-  margin-left: 20px;
   display: none;
 }
-/* ---------- media query for menu ---------- */
 
-@media only screen and (max-width: 800px){
-  
-  nav ul{
-    position: absolute;
-    top: 70px;
-    left: 0px;
-    background: #333;
-    width: 100%;
-    overflow: hidden;
-    transition: max-height 0.5s;
-  }
-  nav ul li{
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  nav ul li a{
-    color: #fff;
-  }
-  .menu-icon{
-    display: block;
-    cursor: pointer;
-  }
-}
-
-/* --media query for less than 600px screen size-- */
-@media only screen and (max-width:800px){
-  .row{
-    text-align: center;
-  }
+#check{
+  display: none;
 }
 
 /* ------------ all productd page ------------ */
@@ -612,4 +581,55 @@ th:last-child{
   .cart-info p{
     display: none;
   }
+  #check:checked~ 
 }
+
+/* --media query for less than 600px screen size-- */
+@media only screen and (max-width:800px){
+  .row{
+    text-align: center;
+  }
+}
+
+/* ---------- media query for menu ---------- */
+
+@media only screen and (max-width: 800px){
+
+  #check:checked~ #home .container .navbar nav ul li{
+
+    display: block;
+  }
+
+  #check:checked~ #products .container .navbar nav ul li{
+   display: block;
+  }
+  
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  nav ul li a{
+    color: #fff;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+    width: 28px;
+    margin-left: 20px;
+    position: absolute;
+    right: 100px;
+    top: 28px;
+  }
+} 
+

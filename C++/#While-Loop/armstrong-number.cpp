@@ -11,13 +11,13 @@ int main()
     int digit=num%10;
     ans+=digit*digit*digit;
     num=num/10;
+    }
     if(ans==temp){
-      cout<<"Armstrong";
+      cout<<"Armstrong.";
     }
     else{
-      cout<<"Not an Armstrong";
+      cout<<"Not an Armstrong.";
     }
-  }
 
   return 0;
 }
