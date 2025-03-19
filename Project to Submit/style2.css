@@ -22,6 +22,7 @@ nav{
 nav ul{
   display: inline-block;
   list-style-type: none;
+  
 }
 
 nav ul li{
@@ -584,20 +585,13 @@ th:last-child{
   #check:checked~ 
 }
 
-/* --media query for less than 600px screen size-- */
-@media only screen and (max-width:800px){
-  .row{
-    text-align: center;
-  }
-}
-
 /* ---------- media query for menu ---------- */
 
 @media only screen and (max-width: 800px){
 
   #check:checked~ #home .container .navbar nav ul li{
-
-    display: block;
+   display: block;
+   
   }
 
   #check:checked~ #products .container .navbar nav ul li{
