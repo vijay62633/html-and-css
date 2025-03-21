@@ -582,7 +582,7 @@ th:last-child{
   .cart-info p{
     display: none;
   }
-  #check:checked~ 
+  /* #check:checked~  */
 }
 
 /* ---------- media query for menu ---------- */
@@ -590,31 +590,47 @@ th:last-child{
 @media only screen and (max-width: 800px){
 
   #check:checked~ #home .container .navbar nav ul li{
-   display: block;
-   
+   height: 100px;
+   transition: height 1s ease-out;   
+  }
+
+  #check:checked~ #home .container .navbar nav ul{
+    height: auto;
+    transition: height 1s ease-out;  
   }
 
   #check:checked~ #products .container .navbar nav ul li{
-   display: block;
+   height: 100px;
+   transition: height 1s ease-out;
   }
-  
+
+  #check:checked~ #products .container .navbar nav ul{
+  height: auto;
+  transition: height 1s ease-out;
+  }
+
   nav ul{
     position: absolute;
     top: 70px;
     left: 0px;
-    background: #333;
+    background: #3cdff5;
     width: 100%;
+    height: 0px;
     overflow: hidden;
-    transition: max-height 0.5s;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
   }
   nav ul li{
-    display: block;
+    /* display: block; */
     margin-top: 10px;
     margin-bottom: 10px;
-    display: none;
+    display: block;
+    height: 0px;
+    max-height: 30px;
+    overflow: hidden;
   }
   nav ul li a{
-    color: #fff;
+    color: #000;
   }
   .menu-icon{
     display: block;
