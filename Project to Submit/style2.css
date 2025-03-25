@@ -232,25 +232,6 @@ small{
   font-size: 16px;
 }
 
-/* ---------- Brands ---------- */
-.brands{
-  margin: 100px auto;
-}
-
-.col-5{
-  width: 160px;
-}
-
-.col-5 img{
-  width: 100%;
-  cursor: pointer;
-  filter: grayscale(100%);
-}
-
-.col-5 img:hover{
-  filter:grayscale(0%)
-}
-
 /* ---------- Footer ---------- */
 footer{
   background: #000;
@@ -630,5 +611,49 @@ th:last-child{
     right: 100px;
     top: 28px;
   }
-} 
+}
 
+/* ---------- slider ---------- */
+.slide-container{
+  display: grid;
+  place-items: center;
+  /* height: 350px; */
+  margin: auto;
+  width: 90%;
+  overflow: hidden;
+}
+
+.slide-row{
+  display: flex;
+  width: calc(250px*24);
+  animation: scroll 30s linear infinite;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.slide-row img{
+  min-width: 270px;
+  width: 100%;
+  height: 350px;
+  transition: transform 1s;
+}
+
+.slide-row img:hover{
+  transform: translateZ(10px);
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px*40));
+  }
+}
+
+.col-3-slide{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
