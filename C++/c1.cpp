@@ -8,6 +8,8 @@ int main()
 
   (a>b && a>c)?cout<<a:(b>a && b>c) ?cout<<b:cout<<c;
   cout<<a;
+  cout<<b;
+  cout<<c;
 
 
 return 0;
